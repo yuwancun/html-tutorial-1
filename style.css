@@ -1,26 +1,145 @@
-body{
-    background: #cccccc;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-#main-wrapper{
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+a {
+    color: #f58220;
+    text-decoration: none;
+}
+
+#main-wrapper {
     width: 960px;
     margin: 0 auto;
 }
-header{
-    height: 150px;
+
+header {
+    padding: 30px 0 0 0;
     background: #333333;
 }
-#main-content{
+
+.logo a {
+    display: block;
+    width: 133px;
+    height: 46px;
+    background: url(images/logo.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin: 0 0 25px 20px;
+}
+
+.primany ul {
+    background: #666666;
+}
+
+.primany ul li {
+    float: left;
+    border-right: 1px solid #333333;
+}
+
+.primany ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-wrap {
+    background: #e5e5e5;
+}
+
+#main-content {
     background: #ffffff;
     float: left;
     width: 660px;
+    padding: 40px 20px;
 }
-aside{
+
+.thumbnail {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.post {
+    clear: both;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.post div{
+    overflow: hidden;
+}
+
+.post h1 a {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post h1 a:hover{
+    color: #d7721c;
+    text-decoration: underline;
+}
+
+.post p{
+    padding: 10px 0 20px 0;
+}
+
+.post .more{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
     width: 300px;
     background: #e5e5e5;
     float: right;
+    padding: 40px 20px;
 }
-footer{
+
+.side-box{
+    margin-bottom: 40px;
+}
+.side-box ul{
+    margin-left: 10px;
+}
+.side-box ul li{
+    margin-bottom: 10px;
+}
+.sidebar-heading{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+footer {
     clear: both;
     background: #333333;
-    height: 50px;
+    padding: 20px;
+   text-align: center; 
+}
+
+footer small{
+    color: #cccccc;
+    font-size: 12px;
 }
